@@ -2,15 +2,19 @@ const path = require('path');
 const LicenseInfoWebpackPlugin = require('license-info-webpack-plugin').default;
 const TerserPlugin = require('terser-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
   const plugins = [new VueLoaderPlugin()];
   if (isProduction) {
     plugins.push(
+      new CleanWebpackPlugin(['public']),
       new LicenseInfoWebpackPlugin({
         glob: '{LICENSE,license,License}*',
-      })
+      }),
+      new HtmlWebpackPlugin({template: './index.html'})
     );
   }
   return {
