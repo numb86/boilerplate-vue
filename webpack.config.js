@@ -9,14 +9,16 @@ const OUTPUT_DIR_NAME = 'public';
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
-  const plugins = [new VueLoaderPlugin()];
+  const plugins = [
+    new VueLoaderPlugin(),
+    new HtmlWebpackPlugin({template: './index.html'}),
+  ];
   if (isProduction) {
     plugins.push(
       new CleanWebpackPlugin([OUTPUT_DIR_NAME]),
       new LicenseInfoWebpackPlugin({
         glob: '{LICENSE,license,License}*',
-      }),
-      new HtmlWebpackPlugin({template: './index.html'})
+      })
     );
   }
   return {
