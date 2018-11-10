@@ -5,6 +5,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
+const SOURCE_DIR_NAME = 'src';
 const OUTPUT_DIR_NAME = 'public';
 
 module.exports = (env, argv) => {
@@ -22,7 +23,7 @@ module.exports = (env, argv) => {
     );
   }
   return {
-    context: path.resolve(__dirname, 'src'),
+    context: path.resolve(__dirname, SOURCE_DIR_NAME),
     entry: {
       bundle: './index.js',
     },
@@ -34,17 +35,17 @@ module.exports = (env, argv) => {
       rules: [
         {
           test: /\.vue$/,
-          include: path.resolve(__dirname, 'src'),
+          include: path.resolve(__dirname, SOURCE_DIR_NAME),
           use: 'vue-loader',
         },
         {
           test: /\.css$/,
-          include: path.resolve(__dirname, 'src'),
+          include: path.resolve(__dirname, SOURCE_DIR_NAME),
           use: ['style-loader', 'css-loader'],
         },
         {
           test: /\.js$/,
-          include: path.resolve(__dirname, 'src'),
+          include: path.resolve(__dirname, SOURCE_DIR_NAME),
           use: 'babel-loader',
         },
       ],
