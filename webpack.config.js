@@ -20,7 +20,7 @@ module.exports = (env, argv) => {
     },
     output: {
       path: path.resolve(__dirname, 'public'),
-      filename: '[name].js',
+      filename: '[name].[contentHash].js',
     },
     module: {
       rules: [
