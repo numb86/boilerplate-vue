@@ -5,12 +5,14 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
+const OUTPUT_DIR_NAME = 'public';
+
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
   const plugins = [new VueLoaderPlugin()];
   if (isProduction) {
     plugins.push(
-      new CleanWebpackPlugin(['public']),
+      new CleanWebpackPlugin([OUTPUT_DIR_NAME]),
       new LicenseInfoWebpackPlugin({
         glob: '{LICENSE,license,License}*',
       }),
@@ -23,7 +25,7 @@ module.exports = (env, argv) => {
       bundle: './index.js',
     },
     output: {
-      path: path.resolve(__dirname, 'public'),
+      path: path.resolve(__dirname, OUTPUT_DIR_NAME),
       filename: '[name].[contentHash].js',
     },
     module: {
@@ -60,7 +62,7 @@ module.exports = (env, argv) => {
         }
       : {},
     devServer: {
-      contentBase: path.resolve(__dirname, 'public'),
+      contentBase: path.resolve(__dirname, OUTPUT_DIR_NAME),
       historyApiFallback: true,
     },
   };
