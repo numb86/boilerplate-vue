@@ -1,6 +1,6 @@
 const path = require('path');
 const LicenseInfoWebpackPlugin = require('license-info-webpack-plugin').default;
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = (env, argv) => {
@@ -45,8 +45,8 @@ module.exports = (env, argv) => {
     optimization: isProduction
       ? {
           minimizer: [
-            new UglifyJsPlugin({
-              uglifyOptions: {
+            new TerserPlugin({
+              terserOptions: {
                 output: {
                   comments: /^\**!|@preserve|@license|@cc_on/,
                 },
