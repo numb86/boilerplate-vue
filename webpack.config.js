@@ -26,7 +26,7 @@ module.exports = (env, argv) => {
     },
     output: {
       path: path.resolve(__dirname, OUTPUT_DIR_NAME),
-      filename: '[name].[contentHash].js',
+      filename: isProduction ? '[name].[contentHash].js' : '[name].js',
     },
     module: {
       rules: [
