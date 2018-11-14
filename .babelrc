@@ -14,5 +14,10 @@
         }
       }
     ]
-  ]
+  ],
+  "env": {
+    "test": {
+      "presets": ["power-assert"]
+    }
+  }
 }
