@@ -11,7 +11,11 @@
     "start": "npm i && webpack-dev-server --hot --mode development",
     "build": "npm i && NODE_ENV=production webpack --mode production",
     "lint": "eslint --ext js,vue src/",
-    "lint:fix": "eslint --ext js,vue src/ --fix"
+    "lint:fix": "eslint --ext js,vue src/ --fix",
+    "test": "mocha --require intelli-espower-loader 'src/**/__tests__/*.test.js'"
+  },
+  "directories": {
+    "test": "src/"
   },
   "keywords": [],
   "author": "numb86",
