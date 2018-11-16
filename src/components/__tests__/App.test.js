@@ -10,7 +10,7 @@ describe('PowerAssert', () => {
       const obj = {a: 1, b: 2};
       const ary = ['first', 9, obj];
       const index = 2;
-      assert.equal(ary[index].a, 3);
+      assert.equal(ary[index].a, 1);
     });
   });
   describe('Vue', () => {
