@@ -1,3 +1,7 @@
+import {shallowMount} from '@vue/test-utils';
+
+import App from '../App.vue';
+
 const assert = require('assert');
 
 describe('PowerAssert', () => {
@@ -7,6 +11,12 @@ describe('PowerAssert', () => {
       const ary = ['first', 9, obj];
       const index = 2;
       assert.equal(ary[index].a, 3);
+    });
+  });
+  describe('Vue', () => {
+    it('shallowMount', () => {
+      const wrapper = shallowMount(App);
+      assert.deepEqual(wrapper.text(), 'Hello Vue!');
     });
   });
 });
