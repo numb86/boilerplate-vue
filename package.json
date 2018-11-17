@@ -21,6 +21,9 @@
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
+    "@vue/test-utils": "^1.0.0-beta.25",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.0",
     "babel-preset-power-assert": "^3.0.0",
     "clean-webpack-plugin": "^0.1.19",
@@ -34,6 +37,7 @@
     "power-assert": "^1.6.1",
     "style-loader": "^0.21.0",
     "terser-webpack-plugin": "^1.1.0",
+    "vue-jest": "^3.0.0",
     "vue-loader": "^15.2.4",
     "vue-template-compiler": "^2.5.16",
     "webpack": "^4.14.0",
@@ -42,5 +46,11 @@
   },
   "dependencies": {
     "vue": "^2.5.16"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.vue$": "vue-jest"
+    }
   }
 }
