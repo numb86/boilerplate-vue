@@ -16,7 +16,7 @@ describe('PowerAssert', () => {
   describe('Vue', () => {
     it('shallowMount', () => {
       const wrapper = shallowMount(App);
-      assert.deepEqual(wrapper.text(), 'Hello Vue!');
+      assert.equal(wrapper.text(), 'Hello Vue!');
     });
   });
 });
