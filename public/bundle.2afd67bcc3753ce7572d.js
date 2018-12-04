@@ -1,7 +1,7 @@
 /*!
  * webpack@4.14.0 (MIT)
  *   author: Tobias Koppers @sokra
- *   url: git+https://github.com/webpack/webpack.git
+ *   url: https://github.com/webpack/webpack.git
  *
  *   Copyright JS Foundation and other contributors
  *   
@@ -56,7 +56,7 @@
  *
  * style-loader@0.21.0 (MIT)
  *   author: Tobias Koppers @sokra
- *   url: git+https://github.com/webpack-contrib/style-loader.git
+ *   url: https://github.com/webpack-contrib/style-loader.git
  *
  *   Copyright JS Foundation and other contributors
  *
@@ -83,7 +83,7 @@
  *
  * css-loader@1.0.1 (MIT)
  *   author: Tobias Koppers @sokra
- *   url: git+https://github.com/webpack-contrib/css-loader.git
+ *   url: https://github.com/webpack-contrib/css-loader.git
  *
  *   Copyright JS Foundation and other contributors
  *
@@ -109,7 +109,7 @@
  *
  *
  * process@0.11.10 (MIT)
- *   author: Roman Shtylman
+ *   author: Roman Shtylman <shtylman@gmail.com>
  *   url: git://github.com/shtylman/node-process.git
  *
  *   (The MIT License)
@@ -139,7 +139,7 @@
  *
  * setimmediate@1.0.5 (MIT)
  *   author: YuzuJS
- *   url: git+https://github.com/YuzuJS/setImmediate.git
+ *   url: YuzuJS/setImmediate
  *   contributors:
  *     Domenic Denicola <d@domenic.me> (https://domenic.me)
  *     Donavon West <github@donavon.com> (http://donavon.com)
@@ -169,7 +169,7 @@
  *
  *
  * timers-browserify@2.0.10 ([object Object])
- *   author: J. Ryan Stinnett (http://convolv.es/)
+ *   author: J. Ryan Stinnett <jryans@gmail.com> (http://convolv.es/)
  *   url: git://github.com/jryans/timers-browserify.git
  *   contributors:
  *     Colton Brown <coltonTB@me.com>
