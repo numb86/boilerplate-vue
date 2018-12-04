@@ -8,8 +8,8 @@
     "npm": ">=5.6.0"
   },
   "scripts": {
-    "start": "npm i && webpack-dev-server --hot --mode development",
-    "build": "npm i && NODE_ENV=production webpack --mode production",
+    "start": "yarn && webpack-dev-server --hot --mode development",
+    "build": "yarn && NODE_ENV=production webpack --mode production",
     "lint": "eslint --ext js,vue src/",
     "lint:fix": "eslint --ext js,vue src/ --fix",
     "test": "jest"
