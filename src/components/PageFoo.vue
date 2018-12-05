@@ -2,6 +2,7 @@
   <div>
     <p>This is foo page.</p>
     <p>Count: {{ count }}</p>
+    <p>{{ message }}</p>
     <p><button @click.prevent="increment({value: 1})">increment +1</button></p>
     <p>
       <button @click.prevent="asyncIncrement({value: 2})">
