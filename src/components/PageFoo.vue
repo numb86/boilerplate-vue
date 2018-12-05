@@ -2,10 +2,10 @@
   <div>
     <p>This is foo page.</p>
     <p>Count: {{ count }}</p>
-    <p><button @click.prevent="increment({value: 1})">increment</button></p>
+    <p><button @click.prevent="increment({value: 1})">increment +1</button></p>
     <p>
       <button @click.prevent="asyncIncrement({value: 2})">
-        async increment
+        async increment +2
       </button>
     </p>
   </div>
