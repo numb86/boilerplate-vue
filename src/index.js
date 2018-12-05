@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 
 import App from './components/App.vue';
@@ -7,7 +8,27 @@ import PageTop from './components/PageTop.vue';
 import PageFoo from './components/PageFoo.vue';
 import PageNotFound from './components/PageNotFound.vue';
 
+Vue.use(Vuex);
 Vue.use(VueRouter);
+
+const store = new Vuex.Store({
+  state: {count: 0},
+  getters: {
+    message: state => `Count is ${state.count} !`,
+  },
+  mutations: {
+    increment(state, {value}) {
+      state.count += value;
+    },
+  },
+  actions: {
+    async asyncIncrement({commit}, {value}) {
+      commit('increment', {
+        value: await Promise.resolve(value),
+      });
+    },
+  },
+});
 
 const router = new VueRouter({
   mode: 'history',
@@ -36,6 +57,7 @@ const router = new VueRouter({
 document.addEventListener('DOMContentLoaded', () => {
   new Vue({
     router,
+    store,
     render: h => h(App),
   }).$mount('#app');
 });
