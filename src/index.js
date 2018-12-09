@@ -46,6 +46,10 @@ const router = new VueRouter({
           component: PageFoo,
         },
         {
+          path: '/foo/*',
+          component: PageFoo,
+        },
+        {
           path: '*',
           component: PageNotFound,
         },
