@@ -16,7 +16,7 @@ module.exports = (env, argv) => {
   ];
   if (isProduction) {
     plugins.push(
-      new CleanWebpackPlugin([OUTPUT_DIR_NAME]),
+      new CleanWebpackPlugin(),
       new LicenseInfoWebpackPlugin({
         glob: '{LICENSE,license,License}*',
       })
