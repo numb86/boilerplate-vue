@@ -2834,10 +2834,10 @@ eslint-config-airbnb@^17.1.0:
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
-eslint-config-numb@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-numb/-/eslint-config-numb-3.0.0.tgz#a6e2b35612c06a4b0cd820acc6e1d43de086e85c"
-  integrity sha512-srrSC+E2VsNuZomKKg3hIZf/gcEaUvuKzWNZJnkbUO5RHt4a3bAAT/Rb/C6L6mQq3YBEcBApLE0PK2Igpm4Gaw==
+eslint-config-numb@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-numb/-/eslint-config-numb-5.0.0.tgz#5067ac030a03e4da36f4b57af7654b10e16cf104"
+  integrity sha512-65ulJaKiZiyczNzEV2s9ORkUi+i16T3rTlFqNfpnandYQRWlmBYALL3auP4YxNJ2ONZxdl2+Pt7HawJ1c3O6Rw==
   dependencies:
     eslint "^5.9.0"
     eslint-config-airbnb "^17.1.0"
@@ -2846,7 +2846,7 @@ eslint-config-numb@^3.0.0:
     eslint-plugin-jsx-a11y "^6.1.2"
     eslint-plugin-prettier "^3.0.0"
     eslint-plugin-react "^7.11.1"
-    eslint-plugin-react-hooks "^1.4.0"
+    eslint-plugin-react-hooks "^1.5.1"
     prettier "^1.15.2"
 
 eslint-config-prettier@^3.3.0:
@@ -2903,10 +2903,10 @@ eslint-plugin-prettier@^3.0.0:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-eslint-plugin-react-hooks@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-1.4.0.tgz#ad86001e05519368e55a888b1b31004b8e2ae8f6"
-  integrity sha512-fMGlzztW/5hSQT0UBnlPwulao0uF8Kyp0Uv6PA81lzmcDz2LBtthkWQaE8Wz2F2kEe7mSRDgK8ABEFK1ipeDxw==
+eslint-plugin-react-hooks@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-1.5.1.tgz#3c601326914ee0e1fedd709115db4940bdbbed4a"
+  integrity sha512-i3dIrmZ+Ssrm0LrbbtuGcRf7EEpe1FaMuL8XnnpZO0X4tk3dZNzevWxD0/7nMAFa5yZQfNnYkfEP0MmwLvbdHw==
 
 eslint-plugin-react@^7.11.1:
   version "7.11.1"
