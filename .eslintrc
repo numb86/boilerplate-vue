@@ -1,3 +1,6 @@
 {
-  "extends": ["plugin:vue/recommended", "numb"]
+  "extends": ["plugin:vue/recommended", "numb"],
+  "rules": {
+    "vue/singleline-html-element-content-newline": 0
+  }
 }
