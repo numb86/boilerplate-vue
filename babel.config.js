@@ -7,6 +7,7 @@ const presets = [
         safari: '7',
       },
       useBuiltIns: 'usage',
+      corejs: '3',
     },
   ],
 ];
