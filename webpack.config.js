@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 const LicenseInfoWebpackPlugin = require('license-info-webpack-plugin').default;
 const TerserPlugin = require('terser-webpack-plugin');
@@ -13,6 +14,7 @@ module.exports = (env, argv) => {
   const plugins = [
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({template: './index.html'}),
+    new webpack.EnvironmentPlugin(['NODE_ENV']),
   ];
   if (isProduction) {
     plugins.push(
